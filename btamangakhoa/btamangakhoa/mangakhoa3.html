@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>mang</title>
+
+</head>
+
+<body>
+
+    <script>
+       let m = [];
+       for ( let i=0; i< 5; i++){
+           m[i] = [];
+       }
+       for ( let i =0; i<5; i++){
+           for ( let j=0; j<5; j++){
+               m[i][j] = Math.floor(Math.random()*71+20);
+               document.write(m[i][j]+ " , ");
+           }
+           document.write("<br>");
+           
+       }
+       document.write("<br>");
+       let max = [0][0]; 
+       for (let i =0;i<5; i++){
+           for ( let j=0; j<5; j++){
+               if (m[i][j] > max){
+                   max = m[i][j];
+               }
+           }
+       }
+       document.write("Giá trị lớn nhất là: " + max);
+       document.write("<br>");
+       let min = m[0][0];
+       for (let i=0; i<5; i++){
+           for( let j =0; j<5; j++){
+               if(m[i][j]<min){
+                   min = m[i][j];
+               }
+           }
+       }
+       document.write("Giá trị nhỏ nhất là: " + min);
+       document.write("<br>");
+       let sochan=0;
+       for (let i=0; i<5; i++){
+           for (let j=0; j<5; j++){
+               if (m[i][j]%2==0){
+                
+                   sochan +=1;
+                   
+               }
+           }
+       }
+       document.write("Số lượng giá trị số chẵn là: " + sochan);
+       document.write("<br>");
+       let boiso5 =0;
+       for ( let i =0; i< 5;i++){
+           for ( let j=0; j<5; j++){
+               if (m[i][j] % 5 ==0){
+                   boiso5 +=1;
+               }
+           }
+       }
+       document.write("Số lượng giá trị bội số của 5 là: " + boiso5);
+       document.write("<br>");
+       let songuyento = 0;
+       for (let i =0; i<5;i++){
+            for (let j =0; j<5;j++){
+                let dung=0;
+                for(let y=1;y<=m[i][j]/2;y++){
+                    if( m[i][j]%y==0){
+                        dung ++;
+                    }
+                }
+                if (dung==1){
+                    document.write(m[i][j] + " , ");
+                    songuyento +=1;
+                }
+            }
+       }
+       document.write("<br>");
+       document.write("Số lượng giá trị số nguyên tố là: " + songuyento);
+       document.write("<br>");
+       let dongmax = 0;
+       let dong;
+       for ( let i=0;i<5;i++){
+           tongdong =0;
+           for (let j=0; j<5;j++){
+               tongdong +=m[i][j];
+            }
+            if ( tongdong>dongmax){
+                   dongmax=tongdong;
+                   dong =i;
+            }
+           
+       }
+       document.write("Tổng số lượng giá trị dòng max là dòng " + dong + " : " + m[dong].join('+') + " = " + dongmax);
+       document.write("<br>");
+       let dcc = 0;
+       for ( let j=0; j<5; j++){
+           dcc +=m[j][j];
+       }
+       document.write("Tổng số lượng giá trị đường chéo chính là: " + dcc);
+       document.write("<br>");
+       let dcp = 0;
+       for ( let j=0; j<5; j++){
+           dcp +=m[j][4-j];
+       }
+       document.write("Tổng số lượng giá trị đường chéo phụ là: " + dcp);
+       document.write("<br>");
+       let tongduongbien = 0;
+        for (let i = 0; i < 5; i++) {
+            if (i == 0 || i == 4) {
+                for (let j = 0; j < 5; j++) {
+                    tongduongbien += m[i][j]
+                }
+            }
+            else { tongduongbien += m[i][0] + m[i][4] }
+        }
+        document.write("Tổng số lượng giá trị đường biên quanh mảng là:   " + tongduongbien);
+    </script>
+
+</body>
+
+</html>

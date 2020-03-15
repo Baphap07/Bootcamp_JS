@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>mang</title>
+
+</head>
+
+<body>
+
+    <script>
+        let n = [];
+        for (let i = 1; i < 10; i++) {
+            n[i] = Math.floor(Math.random() * 10 + 20);
+            document.write(n[i] + "  ;  ");
+        }
+        let b=+prompt("nhập một phần tử trong mảng: ");
+        let p = 0;
+        for (let i = 0; i < 10; i++) {
+            if (b == n[i]) {
+                p = 9;
+            };
+        }
+        document.write("<br>");
+        if (p == 9) {
+            document.write(b+ " có trong mảng")
+        }
+        else {
+            document.write(b + " ko có trong mảng")
+        }
+    </script>
+
+</body>
+
+</html>
