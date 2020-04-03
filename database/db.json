@@ -1,0 +1,91 @@
+{
+  "products": [
+    {
+      "productName": "IP 6s plus",
+      "productImage": "imgs/anh1.jpg",
+      "price": "3000000",
+      "manufactory": "Korea",
+      "description": "Korea",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "productName": "IP 7s",
+      "productImage": "imgs/anh2.jpg",
+      "price": "5000000",
+      "manufactory": "Korea",
+      "description": "Korea"
+    },
+    {
+      "productName": "IP 8s",
+      "productImage": "imgs/anh3.jpg",
+      "price": "3500000",
+      "manufactory": "Korea",
+      "description": "Korea",
+      "id": 3
+    },
+    {
+      "productName": "IP Xs",
+      "productImage": "imgs/anh4.jpg",
+      "price": "4300000",
+      "manufactory": "ThaiLand",
+      "description": "ThaiLand",
+      "id": 4
+    },
+    {
+      "productName": "IP 11",
+      "productImage": "imgs/anh5.jpg",
+      "price": "4000000",
+      "manufactory": "Viet Nam",
+      "description": "Viet Nam",
+      "id": 5
+    },
+    {
+      "productName": "IP 11",
+      "productImage": "imgs/anh8.jpg",
+      "price": "3500000",
+      "manufactory": "Viet Nam",
+      "description": "Viet Nam",
+      "id": 6
+    },
+    {
+      "productName": "IP 11",
+      "productImage": "imgs/anh9.jpg",
+      "price": "3200000",
+      "manufactory": "Viet Nam",
+      "description": "Viet Nam",
+      "id": 7
+    },
+    {
+      "productName": "IP 11",
+      "productImage": "imgs/anh6.jpg",
+      "price": "3100000",
+      "manufactory": "Viet Nam",
+      "description": "Viet Nam",
+      "id": 8
+    },
+    {
+      "productName": "addiadas",
+      "productImage": "imgs/anh8.jpg",
+      "price": "3400000",
+      "manufactory": "Thailand",
+      "description": "ThaiLand",
+      "id": 10
+    },
+    {
+      "productName": "fgg",
+      "productImage": "imgs/anh3.jpg",
+      "price": "2000000",
+      "manufactory": "Japan",
+      "description": "Japan",
+      "id": 11
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "baphap@codegym.vn",
+      "password": "123456"
+    }
+  ]
+}
